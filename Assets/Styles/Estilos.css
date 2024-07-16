@@ -1,0 +1,89 @@
+:root {
+  --colordora: #dbba5c;
+  --negro: #000204;
+  --vino: #780000;
+  --doradotrasparente: rgba(200, 209, 109, 0.44);
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-image: url(../imagen/fondo.jpg);
+
+  height: 100%;
+}
+
+
+/* Pantalla grande Xl */
+.container {
+  display: grid;
+  grid-template-columns: 3fr 1fr ;
+  grid-template-rows: 2fr 10fr 2fr 20fr 5fr 1fr;
+  gap: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100vh;
+  background-color: var(--doradotrasparente);
+  grid-template-areas:
+    "A A"
+    "B C "
+    "D D"
+    "E E"
+    "E E"
+    "F F";
+}
+
+nav {
+  grid-area: A;
+  background-color: red;
+  
+}
+
+header {
+  grid-area: B;
+  background-color: blueviolet;
+}
+aside{
+  grid-area: C;
+  background-color: blue;
+}
+section{
+  grid-area: D;
+  background-color: aqua;
+}
+
+main {
+  grid-area: E;
+  background-color: yellow;
+}
+
+
+
+footer {
+  grid-area: F;
+  background-color: green;
+}
+ /* media querys */
+ /* pantalla tablet vertical */
+ @media (max-width: 1200px){
+  .container{
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 10fr 2fr 9fr 20fr 5fr 1fr;
+    grid-template-areas:
+    "A "
+    "B"
+    "D"
+    "C"
+    "E"
+    "E"
+    "F";
+}
+  }
+ 
