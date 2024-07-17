@@ -2,7 +2,7 @@
   --colordora: #dbba5c;
   --negro: #000204;
   --vino: #780000;
-  --doradotrasparente: rgba(200, 209, 109, 0.44);
+  --doradotrasparente: rgba(31, 32, 20, 0.44);
 }
 
 html {
@@ -44,7 +44,7 @@ body {
 }
 nav {
   grid-area: A;
-  background-color: red;
+  
   
 }
 
@@ -96,12 +96,112 @@ nav{
   
  }
 
- .imagen1{
-  background-color: #780000;
-  min-width: 98%;
-  min-height: 100%;
+ .slider-frame{
+    overflow: hidden;
+    width: 800px;
+    height: 400px;
+    margin: 5px auto 0px;
+    
+   
   
  }
+ .slider-frame ul{
+  display: flex;
+  padding: 0;
+  width: 600%;
+  animation: slider 18s infinite alternate ease-in-out;
+
+}
+.slider-frame li{
+  list-style: none;
+  width: 100%;
+}
+.slider-frame img{
+
+  width: 100%;
+}
+
+@keyframes slider {
+  0%{
+    margin-left: 0%;
+  }
+  10%{
+    margin-left: 0%;
+  }
+
+  15%{
+    margin-left: -100%;
+  }
+  30%{
+    margin-left: -100%;
+  }
+  35%{
+    margin-left: -200%;
+  }
+  45%{
+    margin-left: -200%;
+  }
+
+  50%{
+    margin-left: -300%;
+  }
+ 
+  65%{
+    margin-left:-300%;
+  }
+  75%{
+    margin-left: -400%;
+  }
+ 
+  85%{
+    margin-left:-400%;
+  }
+  90%{
+    margin-left: -500%;
+  }
+ 
+  100%{
+    margin-left:-500%;
+  }
+
+
+
+  
+}
+
+.contenedor-botones{
+  position: relative;
+
+}
+
+.botones{
+  position: relative;
+  display: flex;
+  gap: 10px;
+  right: 422px;
+  top: 160px;
+
+}
+
+
+ 
+
+.botones a{
+  list-style: none;
+  background-color: white;
+  text-decoration: none;
+  color: white;
+  border-radius: 50%;
+  font-size: 13px;
+  height: 10px;
+  width: 10px;
+ 
+}
+.botones a:hover{}
+
+
+
+
  aside{
   gap: 10px;
   flex-direction: column;
@@ -109,8 +209,33 @@ nav{
  .imagen2, .imagen3{
   min-width: 99%;
   min-height: 48%;
-  background-color: aliceblue;
+
+  
  }
+
+
+
+
+
+ .imagen2{
+  background-image: url(../imagen/imagen1.jpg);
+  transition: transform 1s ease-in ;
+  transform: scaleX(1);
+ }
+ .imagen2:hover{
+  transform: scaleX(1.1);
+ }
+
+ .imagen3{
+  background-image: url(../imagen/imagen2.jpg);
+  transition: transform 1s ease-in ;
+  transform: scaleX(1);
+ }
+
+ .imagen3:hover{
+  transform: scaleX(1.1);
+ }
+
 
  /* media querys */
  /* pantalla tablet horizontal lg */
@@ -127,7 +252,14 @@ nav{
     "E"
     "F";
 }
+.slider-frame{
 
+  width: 734px;
+  height: 402px;
+
+  
+ 
+}
 aside{
   gap: 10px;
   flex-direction: row;
@@ -149,6 +281,11 @@ aside{
     min-height: 96%
    
    }
+
+   .slider-frame {
+    width: 563px;
+    height: 375px;
+  }
 
  }
  
