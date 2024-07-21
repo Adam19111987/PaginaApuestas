@@ -389,7 +389,7 @@ aside {
     left: 411px;
   }
   }
-}
+
 
 @media (max-width: 767px) and (min-width: 568px){
   .container {
@@ -412,9 +412,9 @@ aside {
 
    /* nav */
 
- .registro ul{
+.registro ul{
   display: none;
- }
+}
 
  .menu{
   display: block;
@@ -508,7 +508,7 @@ aside {
     margin: 0 auto ;
   }
 .botones{
-  bottom: 1536px;
+  bottom: 1641px;;
   left: 127px;
   gap: 30px;
 }
