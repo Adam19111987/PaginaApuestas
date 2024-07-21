@@ -355,7 +355,7 @@ aside {
     grid-template-rows: 3fr 10fr 3fr 10fr 20fr 3fr;
     max-width: 991px;
     min-height: 80%;
-    row-gap: 20px;
+    row-gap: 10px;
   
     grid-template-areas:
       "A"
