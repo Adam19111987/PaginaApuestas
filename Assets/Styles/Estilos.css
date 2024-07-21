@@ -336,11 +336,24 @@ section{
   width: 2px;
   background-color: var(--colordora);
 }
+.juegos_menu{
+  background-color: red;
+  height: 0;
+  width: 191px;
+  display: flex;
+  transition: height 1s ease-in;
+  justify-content: center;
+  align-items: center;
+}
+ .juegos_menu:hover{
+   height: 100%;
+ }
 
 .juegos_menu a{
   font-family: var(--fuenteobuntu);
   font-weight: 500;
-  font-size: 20px;
+  font-size: 17px;
+  text-align: center;
   text-decoration: none;
 
   text-transform: uppercase;
