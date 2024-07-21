@@ -365,6 +365,8 @@ aside {
       "E "
       "F ";
   }
+
+
   /* header */
 
   .slider-frame {
@@ -383,13 +385,9 @@ aside {
     margin: 0 auto 0  0;
   }
   .botones {
-<<<<<<< HEAD
-    bottom: 1584px;
-    left: 365px;
-=======
-    bottom: 1744px;
-    left: 355px;
->>>>>>> 52b0ba72f1b193d9cc4fdc6f473831a95841abd6
+    bottom: 1735px;
+    left: 411px;
+  }
   }
 }
 
@@ -411,33 +409,30 @@ aside {
       "E "
       "F ";
   }
-<<<<<<< HEAD
 
+   /* nav */
 
-
-=======
-/* nav */
-.registro ul{
+ .registro ul{
   display: none;
-}
-.menu{
+ }
+
+ .menu{
   display: block;
   margin-right: 50px;
-  cursor: pointer;
-}
-.menu i{
-  font-size: 28px;
+ }
+ .menu i{
   color: var(--vino);
+  font-size: 28px;
   transition: transform 1s ease-in-out;
-  
+ }
 
-}
-.menu i:hover{
+ .menu i:hover{
   transform: scale(1.5);
-}
+ }
 
-/* header */
->>>>>>> 52b0ba72f1b193d9cc4fdc6f473831a95841abd6
+
+
+
   .slider-frame {
     width: 552px;
     height: 100%;
@@ -452,19 +447,10 @@ aside {
     margin: 0 auto ;
   }
 .botones{
-<<<<<<< HEAD
-  bottom: 1636px;
+  bottom: 1750px;
   left: 244px;
 }
 
-=======
-  bottom: 1762px;;
-  left: 244px;
-}
-
-
-
->>>>>>> 52b0ba72f1b193d9cc4fdc6f473831a95841abd6
 }
 
 @media (max-width: 567px) and (min-width: 20px){
@@ -486,8 +472,6 @@ aside {
       "F ";
   }
 
-<<<<<<< HEAD
-=======
 /* nav */
 .registro ul{
   display: none;
@@ -508,7 +492,6 @@ aside {
 .menu i:hover{
   transform: scale(1.5);
 }
->>>>>>> 52b0ba72f1b193d9cc4fdc6f473831a95841abd6
 
 
   .slider-frame {
@@ -525,11 +508,7 @@ aside {
     margin: 0 auto ;
   }
 .botones{
-<<<<<<< HEAD
   bottom: 1536px;
-=======
-  bottom: 1656px;
->>>>>>> 52b0ba72f1b193d9cc4fdc6f473831a95841abd6
   left: 127px;
   gap: 30px;
 }
