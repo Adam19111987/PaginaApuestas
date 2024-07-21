@@ -4,6 +4,8 @@
   --vino: #780000;
   --doradotrasparente: rgba(31, 32, 20, 0.44);
   --fuenteosval: "Oswald", sans-serif;
+  --fuenteobuntu: "Ubuntu", sans-serif;
+  --orotrasparente :rgba(140, 123, 24, 0.537);
 }
 
 html {
@@ -60,7 +62,7 @@ aside {
 }
 section {
   grid-area: D;
-  background-color: aqua;
+ 
 }
 
 main {
@@ -319,6 +321,41 @@ aside {
   background-size: cover;
 }
 
+/* SECTION */
+section{
+  background-color: var(--orotrasparente);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+  
+}
+
+.linea_vertical{
+  height: 100%;
+  width: 2px;
+  background-color: var(--colordora);
+}
+
+.juegos_menu a{
+  font-family: var(--fuenteobuntu);
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: none;
+
+  text-transform: uppercase;
+  animation: menujuegos 2s infinite  ease-in-out alternate;
+}
+
+@keyframes menujuegos {
+  0%{
+    color: white;
+  }
+  100%{
+    color: yellow;
+  }
+}
+
 /* media querys */
 /* pantalla tablet horizontal lg */
 @media (max-width: 1200px) and (min-width: 992px) {
@@ -394,7 +431,7 @@ aside {
 @media (max-width: 767px) and (min-width: 568px){
   .container {
     grid-template-columns:  1fr;
-    grid-template-rows: 3fr 10fr 4fr 10fr 20fr 3fr;
+    grid-template-rows: 3fr 8fr 3fr 8fr 8fr 1fr;
     max-width: 568px;
     max-height: 100%;
     margin: 0 auto;
@@ -447,8 +484,9 @@ aside {
     margin: 0 auto ;
   }
 .botones{
-  bottom: 1750px;
-  left: 244px;
+  bottom: 1146px;
+  left: 221px;
+  gap: 20px;
 }
 
 }
@@ -456,12 +494,12 @@ aside {
 @media (max-width: 567px) and (min-width: 20px){
   .container {
     grid-template-columns:  1fr;
-    grid-template-rows: 3fr 10fr 2fr 10fr 20fr 3fr;
+    grid-template-rows: 3fr 7fr 2fr 7fr 7fr 1fr;
     max-width: 460px;
-    max-height: 100vh;
+  
     margin: 0 auto;
     min-height: 100vh;
-    row-gap: 8px;
+    row-gap: 10px;
   
     grid-template-areas:
       "A"
@@ -484,9 +522,13 @@ aside {
   width: 80px;
    height: 80%;
 }
+.cabecera-registro{
+  margin-right: 80px;
+}
+
 .menu{
   display: block;
-  margin-right: 70px;
+  margin-right: 100px;
 }
 
 .menu i{
@@ -502,7 +544,7 @@ aside {
 
 
   .slider-frame {
-    width: 360px;
+    width: 428px;
     height: 100%;
    
   }
@@ -515,8 +557,8 @@ aside {
     margin: 0 auto ;
   }
 .botones{
-  bottom: 1841px;;
-  left: 127px;
+  bottom: 1101px;
+  left: 126px;
   gap: 30px;
 }
 }
