@@ -365,6 +365,8 @@ aside {
       "E "
       "F ";
   }
+
+
   /* header */
 
   .slider-frame {
@@ -383,10 +385,11 @@ aside {
     margin: 0 auto 0  0;
   }
   .botones {
-    bottom: 1744px;
-    left: 355px;
+    bottom: 1735px;
+    left: 411px;
   }
-}
+  }
+
 
 @media (max-width: 767px) and (min-width: 568px){
   .container {
@@ -406,27 +409,30 @@ aside {
       "E "
       "F ";
   }
-/* nav */
+
+   /* nav */
+
 .registro ul{
   display: none;
 }
-.menu{
+
+ .menu{
   display: block;
   margin-right: 50px;
-  cursor: pointer;
-}
-.menu i{
-  font-size: 28px;
+ }
+ .menu i{
   color: var(--vino);
+  font-size: 28px;
   transition: transform 1s ease-in-out;
-  
+ }
 
-}
-.menu i:hover{
+ .menu i:hover{
   transform: scale(1.5);
-}
+ }
 
-/* header */
+
+
+
   .slider-frame {
     width: 552px;
     height: 100%;
@@ -441,11 +447,9 @@ aside {
     margin: 0 auto ;
   }
 .botones{
-  bottom: 1762px;;
+  bottom: 1750px;
   left: 244px;
 }
-
-
 
 }
 
@@ -504,7 +508,7 @@ aside {
     margin: 0 auto ;
   }
 .botones{
-  bottom: 1656px;
+  bottom: 1641px;;
   left: 127px;
   gap: 30px;
 }
