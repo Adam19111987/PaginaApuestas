@@ -458,7 +458,7 @@ aside {
     grid-template-columns:  1fr;
     grid-template-rows: 3fr 10fr 2fr 10fr 20fr 3fr;
     max-width: 460px;
-    max-height: 100%;
+    max-height: 100vh;
     margin: 0 auto;
     min-height: 100vh;
     row-gap: 8px;
@@ -473,10 +473,17 @@ aside {
   }
 
 /* nav */
+.cabecera{
+  min-height: 37px;
+}
+
 .registro ul{
   display: none;
 }
-
+.registro img{
+  width: 80px;
+   height: 80%;
+}
 .menu{
   display: block;
   margin-right: 70px;
@@ -508,7 +515,7 @@ aside {
     margin: 0 auto ;
   }
 .botones{
-  bottom: 1641px;;
+  bottom: 1841px;;
   left: 127px;
   gap: 30px;
 }
