@@ -536,7 +536,7 @@ aside {
   .container {
     grid-template-columns: 1fr;
     grid-template-rows: 3fr 7fr 2fr 7fr 7fr 1fr;
-    max-width: 460px;
+    max-width: 360px;
 
  
     min-height: 100vh;
@@ -569,7 +569,7 @@ aside {
 
   .menu {
     display: block;
-    margin-right: 100px;
+    margin-right: 433px;
 
   }
 
