@@ -771,6 +771,7 @@ aside {
     bottom: 13px;
     transform: translateX(-50%);
     z-index: 1;
+    align-items: center;
   }
 
   .slider_nav a {
