@@ -35,6 +35,7 @@ body {
   grid-template-rows: 4fr 10fr 3fr 20fr 5fr 1fr;
   gap: 5px;
   max-width: 1200px;
+  max-height: 100%;
 
   margin: 0 auto;
 
@@ -66,7 +67,7 @@ section {
 
 main {
   grid-area: E;
-  background-color: yellow;
+ 
 }
 
 footer {
@@ -277,6 +278,7 @@ aside {
   background-color: var(--colordora);
   font-size: 20px;
   text-transform: uppercase;
+  margin: 10px;
   font-family: "Oswald", sans-serif;
   font-weight: 600;
   cursor: pointer;
@@ -369,6 +371,51 @@ aside {
  .contenedor_juegos-slider{
   display: none;
  }
+
+ /* main */
+
+ .principal{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 10px;
+ }
+
+ .principial_imagnes{
+  background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ display: flex;
+ align-items: end;
+ justify-content: end;
+ }
+
+ .principial_imagnes:nth-child(1){
+  background-image: url(../imagen/imagen_casino1.jpg);
+ }
+ .principial_imagnes:nth-child(2){
+  background-image: url(../imagen/imagen_casino2.jpg);
+ }
+ .principial_imagnes:nth-child(3){
+  background-image: url(../imagen/imagen_casino3.jpg);
+ }
+ .principial_imagnes:nth-child(4){
+  background-image: url(../imagen/imagen_casino4.jpg);
+ }
+ .principial_imagnes:nth-child(5){
+  background-image: url(../imagen/imagen_casino5.jpg);
+ }
+ .principial_imagnes:nth-child(6){
+  background-image: url(../imagen/imagen_casino6.jpg);
+ }
+ .principial_imagnes:nth-child(7){
+  background-image: url(../imagen/imagen_casino7.jpg);
+ }
+ .principial_imagnes:nth-child(8){
+  background-image: url(../imagen/imagen_casino8.jpg);
+ }
+
+
+ 
 
 /* media querys */
 /* pantalla tablet horizontal lg */
