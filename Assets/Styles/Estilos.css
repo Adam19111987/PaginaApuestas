@@ -67,7 +67,7 @@ section {
 
 main {
   grid-area: E;
- 
+
 }
 
 footer {
@@ -166,7 +166,6 @@ header {
   overflow: hidden;
   width: 800px;
   height: 400px;
-
 }
 .slider-frame ul {
   display: flex;
@@ -304,8 +303,6 @@ aside {
   }
 }
 
-
-
 .imagen2 {
   background-image: url(../imagen/imagen1.jpg);
   background-repeat: no-repeat;
@@ -320,11 +317,10 @@ aside {
 
 /* SECTION */
 
-
 .contenedor_juegos {
   height: 100%;
   display: flex;
- 
+
   align-items: center;
 }
 
@@ -366,62 +362,62 @@ aside {
   }
 }
 
- /* nav juegos */
- 
- .contenedor_juegos-slider{
+/* nav juegos */
+
+.contenedor_juegos-slider {
   display: none;
- }
+}
 
- /* main */
-
- .principal{
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-gap: 10px;
- }
-
- .principial_imagnes{
-  background-position: center;
- background-repeat: no-repeat;
- background-size: cover;
- display: flex;
- align-items: end;
- justify-content: end;
- }
-
- .principial_imagnes:nth-child(1){
-  background-image: url(../imagen/imagen_casino1.jpg);
- }
- .principial_imagnes:nth-child(2){
-  background-image: url(../imagen/imagen_casino2.jpg);
- }
- .principial_imagnes:nth-child(3){
-  background-image: url(../imagen/imagen_casino3.jpg);
- }
- .principial_imagnes:nth-child(4){
-  background-image: url(../imagen/imagen_casino4.jpg);
- }
- .principial_imagnes:nth-child(5){
-  background-image: url(../imagen/imagen_casino5.jpg);
- }
- .principial_imagnes:nth-child(6){
-  background-image: url(../imagen/imagen_casino6.jpg);
- }
- .principial_imagnes:nth-child(7){
-  background-image: url(../imagen/imagen_casino7.jpg);
- }
- .principial_imagnes:nth-child(8){
-  background-image: url(../imagen/imagen_casino8.jpg);
- }
+/* main */
 
 
+
+.principal {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  min-height: 100%;
  
+  gap: 10px;
+}
+
+.principial_imagnes {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+
+.principial_imagnes:nth-child(1) {
+  background-image: url(../imagen/imagen_casino1.jpg);
+}
+.principial_imagnes:nth-child(2) {
+  background-image: url(../imagen/imagen_casino2.jpg);
+}
+.principial_imagnes:nth-child(3) {
+  background-image: url(../imagen/imagen_casino3.jpg);
+}
+.principial_imagnes:nth-child(4) {
+  background-image: url(../imagen/imagen_casino4.jpg);
+}
+.principial_imagnes:nth-child(5) {
+  background-image: url(../imagen/imagen_casino5.jpg);
+}
+.principial_imagnes:nth-child(6) {
+  background-image: url(../imagen/imagen_casino6.jpg);
+}
+.principial_imagnes:nth-child(7) {
+  background-image: url(../imagen/imagen_casino7.jpg);
+}
+.principial_imagnes:nth-child(8) {
+  background-image: url(../imagen/imagen_casino8.jpg);
+}
 
 /* media querys */
 /* pantalla tablet horizontal lg */
 @media (max-width: 1200px) and (min-width: 992px) {
   /* header */
-
 
   .aside {
     height: 100%;
@@ -440,8 +436,6 @@ gap: 10px;
     width: 305px;
     height: 80%;
   }
-
-
 }
 
 /* pantalla tablet vertical  */
@@ -449,7 +443,7 @@ gap: 10px;
   .container {
     grid-template-columns: 1fr;
     grid-template-rows: 3fr 10fr 3fr 10fr 10fr 3fr;
-    max-width: 820px;
+  
     margin: 0 20px;
     row-gap: 8px;
 
@@ -507,13 +501,29 @@ gap: 10px;
     max-width: 61%;
     justify-content: center;
   }
+  /* main */
+  main{
+    max-width: 500px;
+  }
+
+  .principal{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    width: 100%;
+    
+  }
+  .principial_imagnes{
+    width: 300px;
+    min-height: 100%;
+  }
+
 }
 
 @media (max-width: 767px) and (min-width: 568px) {
   .container {
-    grid-template-columns:  2fr;
+    grid-template-columns: 2fr;
     grid-template-rows: 3fr 8fr 3fr 8fr 8fr 1fr;
-  
+
     margin-left: 26px;
 
     row-gap: 7px;
@@ -550,7 +560,6 @@ gap: 10px;
   .slider-frame {
     width: 552px;
     height: 100%;
-   
   }
 
   .imagen2,
@@ -558,7 +567,6 @@ gap: 10px;
     width: 357px;
     height: 200px;
     margin-left: 130px;
-    
   }
   .botones {
     bottom: 1146px;
@@ -567,13 +575,12 @@ gap: 10px;
   }
   /* nav juegos */
 
-
   .contenedor_juegos {
     max-width: 47%;
     justify-content: center;
     align-items: center;
   }
-  .contenedor_juegos a{
+  .contenedor_juegos a {
     font-size: 12px;
     text-align: center;
   }
@@ -583,9 +590,8 @@ gap: 10px;
   .container {
     grid-template-columns: 1fr;
     grid-template-rows: 3fr 7fr 2fr 7fr 7fr 1fr;
-    max-width: 360px;
+   
 
- 
     min-height: 100vh;
     row-gap: 10px;
 
@@ -617,7 +623,6 @@ gap: 10px;
   .menu {
     display: block;
     margin-right: 433px;
-
   }
 
   .menu i {
@@ -632,11 +637,10 @@ gap: 10px;
   .slider-frame {
     width: 428px;
     height: 100%;
-   
   }
 
-
-  .imagen2, .imagen3 {
+  .imagen2,
+  .imagen3 {
     width: 261px;
     height: 197px;
     margin-left: 56px;
@@ -647,79 +651,64 @@ gap: 10px;
     gap: 30px;
   }
   .contenedor_juegos {
-  display: none;
+    display: none;
   }
 
-   /* nav juegos */
- 
- .contenedor_juegos-slider{
-  display: flex;
-  overflow: hidden;
-  width: 200%;
-  height: 100%;
-  
-  animation: carrusel 15s infinite alternate ease-in-out ;
-  animation-delay: 2s;
-  
- }
+  /* nav juegos */
 
+  .contenedor_juegos-slider {
+    display: flex;
+    overflow: hidden;
+    width: 200%;
+    height: 100%;
 
-
-
-
-
- .juegos-slidergrupo1{
-  display: flex;
-  column-gap: 3px;
-  width: 100%;
-  align-items: center;
- }
-
- .juegos-slidergrupo2{
-  display: flex;
-  column-gap: 3px;
-  width: 100%;
-  align-items: center;
-
-}
-
-
-.juegos_menu{
-  transition: none;
-  width: 116px;
-}
-
-@keyframes carrusel {
-  0%{
-    margin-left: 0%;
+    animation: carrusel 15s infinite alternate ease-in-out;
+    animation-delay: 2s;
   }
 
-  25%{
-    margin-left: 0%;
+  .juegos-slidergrupo1 {
+    display: flex;
+    column-gap: 3px;
+    width: 100%;
+    align-items: center;
   }
 
-  50%{
-    margin-right: -100%;
+  .juegos-slidergrupo2 {
+    display: flex;
+    column-gap: 3px;
+    width: 100%;
+    align-items: center;
   }
 
-  100%{
-    margin-left: -100%;
+  .juegos_menu {
+    transition: none;
+    width: 116px;
   }
-  
- }
 
+  @keyframes carrusel {
+    0% {
+      margin-left: 0%;
+    }
 
+    25% {
+      margin-left: 0%;
+    }
 
-.juegos_menu:hover{
-   display:  none;
-}
+    50% {
+      margin-right: -100%;
+    }
 
-.juegos_menu a{
-  font-size: 12px;
-  padding: 10px;
-}
+    100% {
+      margin-left: -100%;
+    }
+  }
 
+  .juegos_menu:hover {
+    display: none;
+  }
 
-
-
+  .juegos_menu a {
+    font-size: 12px;
+    padding: 10px;
+  }
 }
