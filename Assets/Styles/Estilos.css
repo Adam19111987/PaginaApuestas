@@ -35,7 +35,7 @@ body {
   grid-template-rows: 4fr 10fr 3fr 20fr 5fr 1fr;
   gap: 5px;
   max-width: 1200px;
-  max-height: 100%;
+  max-height: 100vh;
 
   margin: 0 auto;
 
@@ -125,8 +125,8 @@ nav {
   align-items: center;
 }
 .registro img {
-  width: 100px;
-  height: 100px;
+  width: 65px;
+  height: 65px;
   margin-left: 20px;
 }
 
@@ -150,7 +150,7 @@ nav {
 
 .linea-vertical {
   background-color: red;
-  height: 100px;
+  height: 65px;
   width: 1px;
 }
 .menu {
@@ -229,27 +229,8 @@ header {
   position: relative;
 }
 
-.botones {
-  position: relative;
-  display: flex;
-  gap: 10px;
-  bottom: 1257px;
-  left: 394px;
-}
 
-.botones a {
-  list-style: none;
-  background-color: white;
-  text-decoration: none;
 
-  border-radius: 50%;
-  font-size: 13px;
-  height: 10px;
-  width: 10px;
-}
-.botones a:hover {
-  opacity: 1;
-}
 
 aside {
   gap: 10px;
@@ -263,6 +244,8 @@ aside {
   justify-content: end;
   flex-direction: column;
   align-items: end;
+  border: solid 2px yellow;
+  border-radius: 10px;
 }
 
 .jugar {
@@ -318,7 +301,7 @@ aside {
 /* SECTION */
 
 .contenedor_juegos {
-  height: 100%;
+  height: 100px;
   display: flex;
 
   align-items: center;
@@ -372,47 +355,7 @@ aside {
 
 
 
-.principal {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  min-height: 100%;
- 
-  gap: 10px;
-}
 
-.principial_imagnes {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  align-items: end;
-  justify-content: end;
-}
-
-.principial_imagnes:nth-child(1) {
-  background-image: url(../imagen/imagen_casino1.jpg);
-}
-.principial_imagnes:nth-child(2) {
-  background-image: url(../imagen/imagen_casino2.jpg);
-}
-.principial_imagnes:nth-child(3) {
-  background-image: url(../imagen/imagen_casino3.jpg);
-}
-.principial_imagnes:nth-child(4) {
-  background-image: url(../imagen/imagen_casino4.jpg);
-}
-.principial_imagnes:nth-child(5) {
-  background-image: url(../imagen/imagen_casino5.jpg);
-}
-.principial_imagnes:nth-child(6) {
-  background-image: url(../imagen/imagen_casino6.jpg);
-}
-.principial_imagnes:nth-child(7) {
-  background-image: url(../imagen/imagen_casino7.jpg);
-}
-.principial_imagnes:nth-child(8) {
-  background-image: url(../imagen/imagen_casino8.jpg);
-}
 
 /* media querys */
 /* pantalla tablet horizontal lg */
@@ -424,16 +367,13 @@ aside {
   }
 
   .slider-frame {
-    width: 667px;
+    width: 731px;
     height: 398px;
   }
-  .botones {
-    bottom: 1257px;
-    left: 284px;
-  }
+
   .imagen2,
   .imagen3 {
-    width: 305px;
+    width: 358px;
     height: 80%;
   }
 }
@@ -463,7 +403,7 @@ aside {
   }
   .cabecera-registro {
     gap: 9px;
-    margin-right: 70px;
+    margin-right: 529px;
   }
 
   /* header */
@@ -486,13 +426,11 @@ aside {
 
   .imagen2,
   .imagen3 {
-    width: 377px;
+    
     height: 300px;
+    margin-left: 16px;
   }
-  .botones {
-    bottom: 1230px;
-    left: 342px;
-  }
+
   .juegos_menu a {
     font-size: 14px;
   }
@@ -509,7 +447,7 @@ aside {
   .principal{
     grid-template-columns: repeat(2, 1fr);
     gap: 1px;
-    width: 100%;
+  
     
   }
   .principial_imagnes{
@@ -568,11 +506,7 @@ aside {
     height: 200px;
     margin-left: 130px;
   }
-  .botones {
-    bottom: 1146px;
-    left: 221px;
-    gap: 20px;
-  }
+
   /* nav juegos */
 
   .contenedor_juegos {
@@ -613,16 +547,16 @@ aside {
     display: none;
   }
   .registro img {
-    width: 80px;
-    height: 80%;
+    width: 65px;
+    height: 65px;
   }
   .cabecera-registro {
-    margin-right: 380px;
+    margin-right: 384px;
   }
 
   .menu {
     display: block;
-    margin-right: 433px;
+    margin-right: 407px;
   }
 
   .menu i {
@@ -645,11 +579,7 @@ aside {
     height: 197px;
     margin-left: 56px;
   }
-  .botones {
-    bottom: 1101px;
-    left: 87px;
-    gap: 30px;
-  }
+
   .contenedor_juegos {
     display: none;
   }
@@ -660,7 +590,7 @@ aside {
     display: flex;
     overflow: hidden;
     width: 200%;
-    height: 100%;
+    height: 150px;
 
     animation: carrusel 15s infinite alternate ease-in-out;
     animation-delay: 2s;
